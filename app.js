@@ -15,6 +15,8 @@ window.addEventListener("keydown",(keypress)=>{
     document.getElementById("codeSection").innerHTML= keypress.code;
     document.getElementById("keySection").innerHTML= keypress.key;
     document.getElementById("whichSection").innerHTML= keypress.which;
+
+    if(keypress.which === 32){keySection.innerText ="Space-bar";}
 })
 
 
